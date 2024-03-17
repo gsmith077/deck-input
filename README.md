@@ -1,5 +1,7 @@
 # deck-input
 
+![Example Image](/readme_images/example.png)
+
 A method of using a Steam Deck as a (limited) input for PC
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -53,6 +55,9 @@ With your venv activated:
 >
 > `--reload` allows live updates to files to be picked up. This shouldn't be an
 > issue, since the YAML is loaded on each request to `/`
+
+From alternate device, open a browser window to the private IP of the host,
+port `5000`
 
 ## No WSL2?
 
