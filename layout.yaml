@@ -1,0 +1,30 @@
+---
+# This supports the following formats:
+# Long format:
+#   - label: str
+#     inputs: str|list[str]
+#     color: #RGB(Optional, single characters per channel)
+#     order: int(optional)
+# Short format:
+#   - "Name of button": "inputs"|[]
+
+buttons:
+  - label: "Screenshot"
+    inputs:
+      - "cmd"
+      - "shift"
+      - "s"
+    color: "#2F2"
+    order: 2
+  - label: "SELF DESTRUCT"
+    inputs: "backspace"
+    color: "#F22"
+    order: "10"
+  - label: "Toggle Landing Gear"
+    inputs: "n"
+    color: "#FF2"
+  - label: "Request Takeoff/Landing"
+    inputs: ["alt", "n"]
+    color: "#FF2"
+  - "MobiGlass": "f1"
+  - "$": ["shift", "4"]

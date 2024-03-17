@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background: repeating-linear-gradient(#000,
+                    #222 4px,
+                    #444 4px,
+                    #222 4px);
+        }
+
+        #box {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-content: space-between;
+        }
+
+        button {
+            border: 1px black solid;
+            display: block;
+            margin: 5px;
+            height: 120px;
+            min-height: 20%;
+            width: 20%;
+            min-width: 20%;
+            background-color: #47d8;
+            color: #fff;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+    <script>
+        function sendreq(inputs) {
+            console.log("Sending: " + inputs);
+            fetch("/inputs", {
+                method: "post",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    inputs: inputs,
+                }),
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div id="box">
+        {% for button in buttons %}
+        <button onclick="sendreq({{ button['inputs'] }})" style="
+        {% if button.color %}
+        background-color: {{ button.color }}8; 
+        {%endif%}
+        {% if button.order %}
+            order: {{ button.order }}; 
+            {%endif%}">
+            {{ button['label'] }}
+        </button>
+        {% endfor %}
+    </div>
+</body>
+
+</html>
