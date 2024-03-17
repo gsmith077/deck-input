@@ -60,7 +60,7 @@ def main():
     Default route of the web app. Parses the YAML, sends it for formatting, and
     returns the rendered template.
     """
-    with open("layout.yaml", "r") as layout_file:
+    with open("layout.yaml", "r", encoding="utf8") as layout_file:
         layout = yaml.safe_load(layout_file)
 
     buttons = format_buttons(layout["buttons"])
