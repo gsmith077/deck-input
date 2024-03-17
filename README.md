@@ -1,8 +1,16 @@
 # deck-input
 
-[[_TOC_]]
-
 A method of using a Steam Deck as a (limited) input for PC
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Modularity](#modularity)
+- [Setup](#setup)
+- [Running](#running)
+- [No WSL2?](#no-wsl2)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 Initially conceived for Star Citizen, I wanted a way to use my steam deck to
 send commands during gamestate to my PC. After some searching, I was not pleased
