@@ -1,6 +1,6 @@
 # deck-input
 
-![Example Image](/readme_images/example.png)
+![Example Image](/readme_images/example.png =720x)
 
 A method of using a Steam Deck as a (limited) input for PC
 
