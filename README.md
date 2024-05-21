@@ -21,7 +21,7 @@ with any of the avialable solutions.
 So I took what I know (python) and created a method of sending keystrokes
 through a web app that I can load on my deck.
 
-Obvious security concern: If you let arbitrary devices send arbitrary inputs,
+**Obvious security concern**: If you let arbitrary devices send arbitrary inputs,
 you will have arbitrary results. Use with caution and make sure you know what
 you're doing.
 
